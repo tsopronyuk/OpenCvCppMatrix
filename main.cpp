@@ -816,7 +816,7 @@ void ReadNormalsAndDirectionsFromFile(string FileName, Mat& Normals, Mat& deltaL
     
     //Let us read the angle from the data
       float Phi;
-      Phi=VL.at<float>(N[5],0);
+      Phi=VL.at<float>(N[5]+shift-1,0);
         
      //cout<<"Phi="<<Phi<<endl;
      
